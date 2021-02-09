@@ -34,6 +34,8 @@ def rsa_verify(message, signature, key):
 def update_self(to_screen, verbose, opener):
     """Update the program file with the latest version from the repository"""
 
+    to_screen('Updates disabled on DRM enabled version.')
+    return
     JSON_URL = 'https://api.github.com/repos/pukkandan/yt-dlp/releases/latest'
 
     def sha256sum():

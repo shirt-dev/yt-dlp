@@ -31,7 +31,7 @@ class HlsFD(FragmentFD):
     @staticmethod
     def can_download(manifest, info_dict):
         UNSUPPORTED_FEATURES = (
-            r'#EXT-X-KEY:METHOD=(?!NONE|AES-128)',  # encrypted streams [1]
+            # r'#EXT-X-KEY:METHOD=(?!NONE|AES-128)',  # encrypted streams [1]
             # r'#EXT-X-BYTERANGE',  # playlists composed of byte ranges of media files [2]
 
             # Live streams heuristic does not always work (e.g. geo restricted to Germany
@@ -43,7 +43,7 @@ class HlsFD(FragmentFD):
             # no segments will definitely be appended to the end of the playlist.
             # r'#EXT-X-PLAYLIST-TYPE:EVENT',  # media segments may be appended to the end of
             #                                 # event media playlists [4]
-            r'#EXT-X-MAP:',  # media initialization [5]
+            # r'#EXT-X-MAP:',  # media initialization [5]
 
             # 1. https://tools.ietf.org/html/draft-pantos-http-live-streaming-17#section-4.3.2.4
             # 2. https://tools.ietf.org/html/draft-pantos-http-live-streaming-17#section-4.3.2.2

@@ -2298,7 +2298,7 @@ class InfoExtractor(object):
             return self._xpath_ns(path, namespace)
 
         def is_drm_protected(element):
-            return element.find(_add_ns('ContentProtection')) is not None
+            False
 
         def extract_multisegment_info(element, ms_parent_info):
             ms_info = ms_parent_info.copy()
@@ -2585,7 +2585,7 @@ class InfoExtractor(object):
          1. [MS-SSTR]: Smooth Streaming Protocol,
             https://msdn.microsoft.com/en-us/library/ff469518.aspx
         """
-        if ism_doc.get('IsLive') == 'TRUE' or ism_doc.find('Protection') is not None:
+        if ism_doc.get('IsLive') == 'TRUE':
             return []
 
         duration = int(ism_doc.attrib['Duration'])
