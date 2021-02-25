@@ -19,7 +19,7 @@ source_suffix = ['.rst', '.md']
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'recommonmark',
+    'myst-parser',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -64,13 +64,4 @@ highlight_language = 'none'
 # so a file named "default.css" will overwrite the builtin "default.css".
 # html_static_path = ['_static']
 
-
-def setup(app):
-    app.add_config_value('recommonmark_config', {
-        'enable_math': False,
-        'enable_inline_math': False,
-        'enable_eval_rst': True,
-        'enable_auto_toc_tree': True,
-        'auto_toc_tree_section': False,
-    }, True)
-    app.add_transform(AutoStructify)
+myst_heading_anchors = 2
