@@ -22,7 +22,7 @@ extensions = [
 templates_path = ['_templates']
 
 # The master toctree document.
-master_doc = 'README'
+master_doc = 'index'
 
 # General information about the project.
 project = u'yt-dlp'
