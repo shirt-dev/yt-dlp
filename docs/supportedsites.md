@@ -1,5 +1,5 @@
 ---
 orphan: true
 ---
-```{include} ..\supportedsites.md
+```{include} ../supportedsites.md
 ```
