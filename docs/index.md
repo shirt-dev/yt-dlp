@@ -1,4 +1,6 @@
+```{toctree}
+index
+supportedsites
+```
 ```{include} ../README.md
-:relative-docs: docs/
-:relative-images:
 ```
