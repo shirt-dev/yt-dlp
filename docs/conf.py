@@ -19,7 +19,7 @@ source_suffix = ['.rst', '.md']
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'myst-parser',
+    'myst_parser',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
