@@ -64,5 +64,5 @@ highlight_language = 'none'
 myst_heading_anchors = 2
 
 html_additional_pages = {
-    'supportedsites': 'supportedsites.md'
+    'supportedsites': 'supportedsites'
 }
