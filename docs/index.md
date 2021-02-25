@@ -1,6 +1,5 @@
-```{toctree}
-index
-supportedsites
-```
 ```{include} ../README.md
+```
+```{toctree}
+supportedsites
 ```
