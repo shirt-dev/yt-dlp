@@ -62,3 +62,7 @@ highlight_language = 'none'
 # html_static_path = ['_static']
 
 myst_heading_anchors = 2
+
+html_additional_pages = {
+    'supportedsites': 'supportedsites.md'
+}
