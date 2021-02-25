@@ -7,7 +7,6 @@ import os
 
 # Allows to import yt-dlp
 sys.path.insert(0, os.path.abspath('..'))
-from recommonmark.transform import AutoStructify
 
 # -- General configuration ------------------------------------------------
 
@@ -61,8 +60,10 @@ highlight_language = 'none'
 # so a file named "default.css" will overwrite the builtin "default.css".
 # html_static_path = ['_static']
 
-myst_heading_anchors = 2
+# Enable heading anchors
+myst_heading_anchors = 4
 
-html_additional_pages = {
-    'supportedsites': 'supportedsites'
-}
+# Suppress heading warnings
+suppress_warnings = [
+    'myst.header',
+]
